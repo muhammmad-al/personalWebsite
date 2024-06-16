@@ -1,4 +1,8 @@
 /* main.css */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +13,10 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -30,10 +38,37 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+    padding: 10px;
 }
 
 main {
+    padding-top: 60px; /* Adjust based on header height */
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
     padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.project-card h3 {
+    margin-top: 0;
 }
 
 footer {

@@ -592,6 +592,22 @@ section,
   line-height: 0;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.vertical-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -669,6 +685,35 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px; /* Add margin to create space below the button */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-download i {
+  margin-right: 8px;
+}
+
+.resume-description {
+  margin-top: 20px; /* Add margin to create space above the text */
+  font-size: 14px;
+  color: #666;
+}
+
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
